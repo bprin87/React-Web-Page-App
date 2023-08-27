@@ -1,0 +1,464 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Radio Canada', sans-serif;
+}
+
+/* Navigation.js */
+
+.nav-container {
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+}
+
+.nav-container-white {
+    background-color: #fff;
+    border-bottom: 1px solid #617a6e;
+}
+
+.navbar {
+    display: flex;
+    width: 80%;
+    margin: 15px auto 10px auto;
+    max-height: 50px;
+}
+
+.logo {
+    font-size: 30px;
+    align-self: center;
+    color:white;
+    font-family: 'Barriecito', cursive;
+    z-index: 11;
+}
+
+.logo-green {
+    color:#617a6e;
+}
+
+.nav-list {
+    display: flex;
+    width: 50%;
+    margin-left: 100px;
+    list-style: none;
+    margin-right: auto;
+}
+
+.nav-list li {
+    align-self: center;
+    margin-left: 25px;
+    margin-right: 20px;
+    color: white;
+    font-weight: 400;
+}
+
+.nav-list-green li  {
+    color: #8AA196;
+}
+
+.nav-list li:hover {
+    cursor: pointer;
+    color: #fff;
+    transform: scale(1.2);
+}
+
+.nav-list-green li:hover {
+    color: #8AA196;
+}
+
+.mobile-btn {
+    display: none;
+}
+
+.mobile-nav-list {
+    display: none;
+}
+
+  .mobile-nav-list-hidden {
+        display: none;
+    }
+
+/* Hero.js */
+
+.hero-image {
+    background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url('./images/peachland.jpeg') ;
+    height: 450px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.hero-image h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 35px;
+    font-weight: 300;
+    color: #fff;
+    text-shadow: 0 0 30px rgba(0,0,0,.7);
+}
+
+
+/* Blog.js */
+
+.intro-container {
+    width: 80%;
+    margin: 20px auto;
+}
+
+.intro {
+    margin-top: 40px;
+}
+
+.intro h1 {
+    margin-bottom: 15px;
+    color: #8AA196;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+.intro p {
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+/* Kelowna.js */
+
+.kelowna, .penticton, .lake-country  {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.kelowna-intro, .lake-country-intro {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 800px 1fr;   
+}
+
+.about-kelowna, .about-lake-country {
+    margin-left: 20px;
+    line-height: 1.5;
+    font-weight: 300;
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.image-container img {
+    border-radius: 5px;
+    width:  800px;
+    height: 500px;
+    object-fit: cover;
+    position: relative;
+}
+
+.image-container h3 {
+    position: absolute;
+    color: white;
+    top: 8px;
+    left: 8px;
+    z-index: 1;
+    font-size: 28px;
+    font-weight: 400;
+    text-shadow: 2px 2px rgba(0,0,0,.2);
+}
+
+.image-description {
+    margin-top: 5px;
+    color: #8AA196;
+    font-weight: 400;
+}
+
+.bi-chevron-left, .bi-chevron-right {
+    cursor: pointer;
+    position: absolute;
+    color: #fff;
+    top: 50%;
+    width: auto;
+}
+
+.bi-chevron-left {
+    left: 0;
+    margin-left: 2px;
+    background-color:  rgba(0,0,0,.2);
+}
+
+.bi-chevron-right {
+    right: 0;
+    margin-right: 2px;
+    background-color:  rgba(0,0,0,.2);
+}
+
+.bi-chevron-left:hover, .bi-chevron-right:hover {
+    transform: scale(1.2);
+}
+
+
+
+/* KelownaEateries.js */
+
+.kelowna-eateries, .penticton-eateries {
+    width: 100%;
+}
+
+.eateries-kelowna {
+    margin-top: 60px;
+    background-color: #EFECE8;
+}
+
+.eateries-kelowna h3 {
+    color:#617a6e;
+    font-size: 28px;
+    font-weight: 500;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.eateries-container {
+    margin: 50px auto 50px auto;
+    padding-bottom: 50px;
+    width: 80%;
+    display: grid;
+    gap: 50px;
+    grid-template-columns: 120px 3fr 1fr;
+    grid-template-rows: 100px 100px;
+    align-items: center;
+    align-content: start;
+} 
+
+.eateries-container p {
+    font-weight: 300;
+    line-height: 1.5;
+    margin-left: 20px;
+    padding-bottom: 30px;
+}
+
+.eatery-logo {
+    height: 100px;
+    max-width: 150px;
+    padding: 5px;
+    object-fit: fill;
+}
+
+
+.social img {
+    margin-right: 30px;
+    width: 45px;
+}
+
+/* Penticton.js */
+
+.penticton-intro {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 1fr 800px;   
+    grid-template-rows: 1fr;
+}
+
+.about-penticton {
+    margin-right: 25px;
+    line-height: 1.5;
+    font-weight: 300;
+}
+
+/* PerntictonEateries.js */
+
+.eateries-penticton {
+    margin-top: 60px;
+    background-color: #8AA196
+}
+
+.eateries-penticton h3 {
+    color: #EFECE8;
+    font-size: 28px;
+    font-weight: 500;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.eateries-penticton-info {
+    color: #fff;
+}
+
+/* Larger Screen */
+
+@media only screen and (min-width: 2619px) {
+
+    .navbar, .intro-container, .kelowna-intro, .penticton-intro, .lake-country-intro, .eateries-container {
+        width: 40%;
+    }
+
+}
+
+/* Desktop Screen */
+
+@media only screen and (max-width: 1375px) {
+
+   
+    .logo {
+        font-size: 1.2rem;
+        width: 40%;
+    }
+
+    .nav-list {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .nav-list li {
+        font-size: .9rem;
+        text-align: center;
+    }
+
+    .hero-image h1 {
+        text-align: center;
+        width: 60%;
+        font-size: 30px;
+    }
+
+    .navbar, .intro-container, .kelowna-intro, .penticton-intro, .lake-country-intro {
+        width: 70%;
+    }
+
+    .intro-container {
+        text-align: center;
+    }
+
+    .intro h1 {
+        font-size: 20px;
+    }
+
+    .kelowna-intro, .penticton-intro, .lake-country-intro {
+        grid-template-columns: 1fr;
+    }
+
+    .about-kelowna, .about-lake-country {
+        margin-left: 0;
+        margin-top: 25px;
+        text-align: center;
+    }
+
+    .about-penticton {
+        margin-bottom: 25px;
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .image-container {
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .image-container img {
+        max-width: 100%;
+        min-width: 100%;
+        height: 600px;
+    }
+
+    .eateries-container {
+        width: 70%;
+        grid-template-columns: 120px 2fr 1fr;
+        grid-template-rows: 250px 150px;
+        margin-top: 40px;
+    }
+
+    .eateries-kelowna h3, .eateries-penticton h3 {
+        font-size: 20px;
+    }
+
+    .eateries-penticton h3 {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* IPad and smaller */
+@media only screen and (max-width: 1024px) {
+  
+    .logo {
+        font-size: 1.2rem;
+    }
+    
+    .nav-list-hidden {
+        display: none;
+    }
+
+    .nav-container-white {
+        background-color: #fff;
+        border-bottom: 1px solid #617a6e;
+    }
+
+    .image-container img {
+        height: 250px;
+    }
+
+    .image-container h3 {
+        font-size: 1.2rem;
+    }
+
+    .eateries-container {
+        width: 70%;
+        grid-template-columns: 1fr;
+        grid-template-rows: 60px;
+        text-align: center;
+        margin-top: 80px;
+    }
+
+    .mobile-btn {
+        display: block;
+        color: #fff;
+        border: none;
+        background: none;
+        margin-left: auto;
+        cursor: pointer;
+        z-index: 11;
+    }
+
+    .mobile-nav {
+        position: fixed;
+        width: 100%;
+        background-color: #8AA196;
+        z-index: 10;
+        height: 100%;
+        overflow-y: hidden;
+        top: 0;
+        transition: opacity 0.15s ease-out, transform 0.15s ease-out;
+    }
+    
+    .mobile-nav-list {
+        display: block;
+        width: 70%;
+        margin-left: auto;
+        margin-top: 100px;
+        margin-right: auto;
+        text-align: center;
+        list-style: none;
+        color: #fff;
+        line-height: 50px;        
+    }
+    
+    .mobile-nav-list li {
+        border-bottom: 1px solid #fff;
+    }
+
+    .mobile-nav-list li:hover {
+        cursor: pointer;
+    }
+    
+}
